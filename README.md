@@ -1,16 +1,31 @@
-# React + Vite
+# 🧵 Digital GSM Prediction System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Non-Destructive Fabric GSM Prediction System** using Computer Vision.
 
-Currently, two official plugins are available:
+## 🚀 Overview
+This project predicts fabric GSM (Grams per Square Meter) using microscopic images — eliminating the need for destructive testing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 How it Works
+1. Upload fabric image
+2. System finds closest match using vector similarity (CBIR)
+3. Applies signal processing (thread count, porosity)
+4. Outputs GSM + structural features
 
-## React Compiler
+## 🛠 Tech Stack
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Chart.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
+- Python
+- FastAPI
+- NumPy, SciPy
+- OpenCV / Pillow
 
-## Expanding the ESLint configuration
+## ⚙️ Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone repo
+```bash
+git clone https://github.com/Hriti123/EL_GSM.git
+cd EL_GSM
